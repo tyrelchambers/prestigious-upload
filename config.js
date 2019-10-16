@@ -1,6 +1,6 @@
 module.exports = {
   "development": {
-    "database": "mongodb://localhost/prestigious",
+    "database": "mongodb://localhost/prestigious-uploader",
     "secret": "my furry cat house"
   },
   "production": {
