@@ -30,7 +30,8 @@ const upload = multer({
     let isFinished = 0;
     const acceptedMimeTypes = [
       "image/jpeg",
-      "image/png"
+      "image/png",
+      "image/jpg"
     ];
 
     for ( let i = 0; i < acceptedMimeTypes.length; i++ ) {

@@ -6,8 +6,9 @@ const anyUpload = upload.any();
 
 const app = express.Router();
 
-app.post('/upload', sessionValidation, (req, res) => {
+app.post('/save', (req, res) => {
   anyUpload(req, res, (err) => {
+    console.log(req)
     if (err) {
       return res.status(422).send({errors: [{title: 'Image Upload Error', detail: err.message}] });
     }
